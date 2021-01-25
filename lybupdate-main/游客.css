@@ -1,0 +1,47 @@
+#box1{
+  		height:60px;
+  		font-size:40px;
+  		background-color: #F0E68C;
+        color:	#2F4F4F;
+        text-align:center;
+        }
+.OUTBOX{
+	display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+}
+.bubble_other{
+	width:390px;
+	height:150px;
+	border-width:2px;
+    border-style:solid;
+    border-color:#66CC99;
+    border-radius:15px;
+    background-color:#66CC99;
+    display: none;
+}
+.username_other{
+	display:inline;
+	font-size:15px;
+	color:blue;
+	text-decoration: underline;
+
+}
+.date1{
+	display:inline;
+	font-size:15px;
+	text-decoration: underline;
+	color:#333333;
+}
+.str1{
+	font-size:20px;
+	height:100px;
+
+}
+.like1{
+	text-decoration: underline;
+	display:inline;
+	font-size:15px;
+	color:#333333;
+}

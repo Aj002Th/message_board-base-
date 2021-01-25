@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>个人界面</title>
+  <script src="./js2.js" ></script>
+  <link rel="stylesheet" type="text/css" href="css2.css">
+</head>
+<body bgcolor="#2E8B57">
+ 	 <div id="box1"><strong>欢迎您=)!</strong></div>
+ 	<div class="box">
+ 	 <div id="box2"><a href="修改个人信息.html" target="_self">点击设置个人信息</a>
+ 	                <br><a href="查看个人信息.html" target="_self">点击查看个人信息</a>
+ 	 </div>
+ 	</div>
+ <div class="out">
+ 	<div id="yan"><br>畅所欲言吧  ~ </div>  
+ 	<div id="input">
+ 	 <form>
+        <textarea cols="80" rows="5" id="message" >在这里输入您的留言... </textarea>
+        <button class="btn btn-warning button" id="reset">重置</button>
+        <input id="sub"  onclick="sub()" type="submit"   value="提交">
+    </form>
+    </div>
+ </div>
+ <div id='OUTBOX'>
+ 	<div class='bubble_other'>
+ 		<div class='username_other'></div>
+ 		<div class='date1'>[日期]</div>
+ 		<div class='str1'></div>
+ 		<div class='like1'>点赞</div>
+ 	</div>
+ 	<div class='bubble_my'>
+ 		<div class='username_my'></div>
+ 		<div class='date2'>[日期]</div>
+ 		<div class='str2'></div>
+ 		<div class='like2'>点赞</div>
+ 		<div class='del'>删除留言</div>
+ 		<div class='re'><a href="留言修改界面.html" target="_self">修改留言</a></div>
+ 	</div>
+ </div>
+
+ </body> 
+ </html>
+
+ 

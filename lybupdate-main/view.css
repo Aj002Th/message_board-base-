@@ -1,0 +1,26 @@
+#box1{
+  	height:60px;
+  	font-size:40px;
+  	background-color: #F0E68C;
+    color:	#2F4F4F;
+    text-align:center;
+}
+#box2{
+    opacity: 0.9;
+	display: block;
+	position:fixed;
+}
+.inbox1{
+	margin: center ;
+	height: 300px;
+	width: 468px;
+	top: 150px;
+	left:400px;
+	position: absolute;
+	border-radius: 12px;
+	background: rgba(216,216,2106,0.5);
+	text-align: center;
+	overflow: hidden;
+	padding: 52px 0px 0px 0px ;
+	font-size:25px;
+}
