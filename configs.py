@@ -1,8 +1,8 @@
 #  config.py
 
 SECRET_KEY = '123456'
-SESSION_COOKIE_SAMESITE = "None"  # 注意是字符串的None
-SESSION_COOKIE_SECURE = True
+# SESSION_COOKIE_SAMESITE = "None"  # 注意是字符串的None
+# SESSION_COOKIE_SECURE = True
 
 HOST = '127.0.0.1'
 PORT = '3306'

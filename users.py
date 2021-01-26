@@ -83,7 +83,7 @@ def show_my_homepage():
     }
 
 
-@users_bp.route('/show_ones_homepage', methods=['GET'])   # 显示某个用户的个人主页
+@users_bp.route('/show_ones_homepage', methods=['GET'])  # 显示某个用户的个人主页
 def show_ones_homepage():
     data = request.get_json(force=True)
     username = data.get("username")
@@ -135,6 +135,21 @@ def show_all_message():
     all_users = Message_board.query.all()
     all_information = []
     for x in all_users:
-        all_information.append([x.username, x.nickname, x.message])
+        username = x.username
+        if x.nickname is None:
+            nickname = "who"
+        else:
+            nickname = x.nickname
+
+        if x.message is None:
+            message = "what"
+        else:
+            message = x.message
+        it = {
+            "username": username,
+            "nickname": nickname,
+            "message": message
+        }
+        all_information.append(it)
     all_information_after = jsonify(all_information)
     return all_information_after
