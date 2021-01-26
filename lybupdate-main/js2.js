@@ -14,9 +14,9 @@ window.onload = function() {
         for(var i = 0; i <a.length; i++)
         {var b=all[i].nickname;
           var c=all[i].message;
-         document.getElementById("bubble_other").style.display ="block"; 
-         document.getElementById("str1").style.display =c;        
-         document.getElementById("username_other").style.display =b;
+         document.getElementsByClassName("bubble_other").style.display ="block"; 
+         document.getElementById("str1").innerHTML =c;        
+         document.getElementById("username_other").innerHTML =b;
         }
      } 
       else {alert(getRequest.responseText)
@@ -26,13 +26,12 @@ window.onload = function() {
 }
 function sub() {
   var BaseURL = 'http://127.0.0.1:5000'
-    var postRequest = new XMLHttpRequest();
-    postRequest.withCredentials= true;
+   var postRequest = new XMLHttpRequest();
+   postRequest.withCredentials= true;
     postRequest.open("POST", BaseURL + '/message/post_message');
-    message=document.getElementById('message').value;
+   message=document.getElementById('message').value;
     var postData = {
-        'message': String(message)
-        
+        'message': String(message)        
     }
    postRequest.setRequestHeader("Content-type", "application/json")
    postRequest.send(JSON.stringify(postData))
@@ -42,7 +41,7 @@ function sub() {
         console.log(postRequest.responseText)
         confirm('发布成功！')
         var myObj = JSON.parse(postRequest.responseText);
-        document.getElementById("bubble_my").style.display ="block"
+        document.getElementsByClassName("bubble_my").style.display ="block"
        document.getElementById("str2").innerHTML =document.getElementById('message');
        document.getElementById("username_my").innerHTML =myObj.nickname;      
        } 

@@ -13,9 +13,9 @@ window.onload = function() {
         for(var i = 0; i <a.length; i++)
         {var b=all[i].nickname;
           var c=all[i].message;
-         document.getElementById("bubble_other").style.display ="block"; 
-         document.getElementById("str1").style.display =c;        
-         document.getElementById("username_other").style.display =b;
+          document.getElementsByClassName("bubble_other").style.display ="block"; 
+         document.getElementById("str1").innerHTML=c;        
+         document.getElementById("username_other").innerHTML=b;
         }
      } 
       else {alert(getRequest.responseText)
