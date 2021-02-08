@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # users.py
 
 from flask import Blueprint, request, session, jsonify

@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 #  config.py
 
 SECRET_KEY = '123456'

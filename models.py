@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # models
 from exit import db
 

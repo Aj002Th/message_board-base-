@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # article.py
 
 from flask import Blueprint, request, session

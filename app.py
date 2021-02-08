@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # app.py
 from flask import Flask, jsonify, request, session
 from flask_cors import *

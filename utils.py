@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # utils.py
 # coding=gbk
 from flask import session

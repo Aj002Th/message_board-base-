@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # exit.py
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
